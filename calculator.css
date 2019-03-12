@@ -1,0 +1,149 @@
+html, body {
+ background-color: #dfd2f9;
+
+}
+
+.text-center {
+    margin: 0px auto;
+    text-align: center;
+    position: relative; top: 10px;
+}
+
+
+
+h1 {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 32pt;
+    color: #987bd3;
+    text-align: center;
+}
+
+p {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 18pt;
+    color: rgb(78, 78, 78);
+    line-height: 24pt;
+    text-align: center;
+}
+
+
+#logo-1 {
+    width: 100px;
+    border-color: #fff;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+    margin: 0px auto;
+    
+}
+
+#calcDisplay {
+    background-color: #ffffff;
+    width: 300px;
+    height: 55px;
+    border-top-left-radius: 1.2em;
+    border-top-right-radius: 1.2em;
+    margin-top: 44px;
+    padding-top: 26px;
+} 
+
+.steps {
+    font-family: 'Quattrocento Sans', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 800;
+    font-size: 2em;
+    color: #60419e;
+    text-align: left; 
+}
+
+span{
+    padding: 30px;
+}
+
+#calculator {
+    background-color: #c8bae5;
+    width: 300px;
+    height: 377px;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding-top: 25px;
+} 
+
+
+
+.button {
+    width: 60px;
+    height: 60px; 
+    border-radius: 50%;
+    display: inline-block; 
+    cursor: pointer; 
+    font-size: 1.4em;
+    font-family: 'Quattrocento Sans', sans-serif;
+  
+}
+
+
+.orange {
+    background-color: #987bd3;
+    color: rgba(255, 255, 255, 0.845);
+    margin: 0px 1px 10px 0px;
+}
+
+.orange:hover {
+    background-color: #7c5eb8;
+}
+
+.orange:active {
+    background-color: #60419e;
+}
+
+
+.math {
+    background-color: #6646a7;
+    color: white;
+}
+
+.math:hover {
+    background-color:#4d3480;
+}
+
+.math:active {
+    background-color:coral;
+}
+
+.white{
+    background-color: white;
+    color: #987bd3;
+}
+
+.white:hover {
+    background-color:rgb(249, 160, 128);
+    color: white;
+}
+
+.white:active {
+    background-color:rgb(250, 90, 32);;
+    color: white;
+}
+
+.big{
+    background-color: coral;
+    color: white;
+    width: 252px;
+    border-radius: 33px;
+    font-size: 3em;
+    margin-top: 8px;
+}
+
+.big:hover {
+    background-color:rgb(249, 104, 52);
+    color: white;
+}
+
+.big:active {
+    background-color:rgb(250, 90, 32);
+    color: white;
+}
+
+
+
