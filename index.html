@@ -17,33 +17,33 @@
         <h1> Calculator </h1>
     </div>
 
-    <div class = "text-center steps" id = "calcDisplay">
-        <span>0</span>
-
+    <div class = "text-center text-left" id = "calcDisplay">
+        <span id = "output-value">0</span>
     </div>
 
-    <div class = "text-center" id = "calculator">
-        <a class="button orange" id ="7">7</a>
-        <a class="button orange" id ="8">8</a>
-        <a class="button orange" id ="9">9</a>
-        <a class="button math" id ="divide">/</a>
+    
+    <div class = "text-center" id = "calculator" >
+        <button class="button orange" value ="7"  onclick="handlers.clickButton()">7</button>
+        <button class="button orange" value ="8" id="btn" onclick="handlers.clickButton()">8</button>
+        <button class="button orange" value ="9" onclick="handlers.clickButton()">9</button>
+        <button class="button math" id ="divide" onclick="handlers.clickButton()">/</button>
             <br/>
-        <a class="button orange" id ="4">4</a>
-        <a class="button orange" id ="5">8</a>
-        <a class="button orange" id ="6">9</a>
-        <a class="button math" id ="multiply">X</a>
+        <button class="button orange" id ="4" onclick="handlers.clickButton()">4</button>
+        <button class="button orange" id ="5" onclick="handlers.clickButton()">5</button>
+        <button class="button orange" id ="6" onclick="handlers.clickButton()">9</button>
+        <button class="button math" id ="multiply" onclick="handlers.clickButton()">x</button>
             <br/>
-        <a class="button orange" id ="1">1</a>
-        <a class="button orange" id ="2">2</a>
-        <a class="button orange" id ="3">3</a>
-        <a class="button math" id ="minus">-</a>
+        <button class="button orange" id ="1" onclick="handlers.clickButton()">1</button>
+        <button class="button orange" id ="2" onclick="handlers.clickButton()">2</button>
+        <button class="button orange" id ="3" onclick="handlers.clickButton()">3</button>
+        <button class="button math" id ="minus" onclick="handlers.clickButton()">-</button>
             <br/>
-        <a class="button white" id ="clear">C</a>
-        <a class="button orange" id ="0">0</a>
-        <a class="button orange" id =".">.</a>
-        <a class="button math" id ="add">+</a>
-            <br/>
-        <a class="button big" id ="total">=</a>
+        <button class="button white" id ="clear" onclick="handlers.clearCalc()">C</button>
+        <button class="button orange" id ="0" onclick="handlers.clickButton()">0</button>
+        <button class="button orange" id ="." onclick="handlers.clickButton()">.</button>
+        <button class="button math" id ="add" onclick="handlers.clickButton()">+</button>
+            <br/> <br>
+        <button class="button big" id ="total" onclick="handlers.showTotal()">=</button>
     </div>
 
 

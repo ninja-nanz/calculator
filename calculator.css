@@ -9,6 +9,10 @@ html, body {
     position: relative; top: 10px;
 }
 
+.text-left {
+    text-align: left; 
+}
+
 
 
 h1 {
@@ -47,9 +51,9 @@ p {
     padding-top: 26px;
 } 
 
-.steps {
+#steps {
     font-family: 'Quattrocento Sans', sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 800;
     font-size: 2em;
     color: #60419e;
@@ -71,7 +75,7 @@ span{
 
 
 
-.button {
+button {
     width: 60px;
     height: 60px; 
     border-radius: 50%;
@@ -82,11 +86,16 @@ span{
   
 }
 
+button:focus {
+    outline:none;
+    box-shadow: none;
+  }
+
 
 .orange {
     background-color: #987bd3;
     color: rgba(255, 255, 255, 0.845);
-    margin: 0px 1px 10px 0px;
+    margin: 0px 1px 8px 0px;
 }
 
 .orange:hover {
@@ -131,8 +140,8 @@ span{
     color: white;
     width: 252px;
     border-radius: 33px;
-    font-size: 3em;
-    margin-top: 8px;
+    font-size: 2em;
+
 }
 
 .big:hover {
