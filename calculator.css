@@ -47,11 +47,11 @@ p {
     height: 55px;
     border-top-left-radius: 1.2em;
     border-top-right-radius: 1.2em;
-    margin-top: 44px;
+    margin-top: 22px;
     padding-top: 26px;
 } 
 
-#steps {
+#output-value {
     font-family: 'Quattrocento Sans', sans-serif;
     letter-spacing: 2px;
     font-weight: 800;
@@ -154,5 +154,12 @@ button:focus {
     color: white;
 }
 
+#history-value {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 80pt;
+    color: #ccb6f7bf;
+    text-align: left;
+    position: absolute; bottom: 300px; left: 50px;
+}
 
 
