@@ -1,11 +1,98 @@
+// get history value 
+function getHistory() {
+    return document.getElementById("history-value").innerText;
+
+}
+
+// push to history value
+function printHistory(num) {
+    document.getElementById("history-value").innerText = num;
+}
+
+
+// Get the output value
+function getOutput() {
+    return document.getElementById("output-value").innerText;
+
+}
+
+// push to output value
+function printOutput(num) {
+    if(num==="") {
+        document.getElementById("output-value").innerText
+    } else {
+    document.getElementById("output-value").innerText = getFormattedNumber(num);
+    }
+}
+
+
+//format the number 
+function getFormattedNumber(num) {
+    var n = Number(num);
+    var value = n.toLocaleString("en");
+    return value
+}
+
+// reverse formatted number for calculations
+function reverseNumberFormat(num) {
+    return Number(num.replace(/,/g, ""));
+}
+
+
+// get operations 
+var operator = document.getElementsByClassName("operator");
+
+// add a click event to all operators 
+for (var i=0; i < operator.length; i++) {
+    operator[i].addEventListener('click', function () {
+       if(this.id==="clear"){  //if clear button is clicked 
+           printHistory(" ");
+           printOutput(" ");
+        } else {
+            var output = getOutput();
+            var history = getHistory();
+            if (output!=" ") {
+                output=reverseNumberFormat(output);
+                history=history+output;
+                if(this.id==="total") {
+                    var result=eval(history);
+                    printOutput(result);
+                    printHistory(" ");
+                } else {
+                    history = history+this.id;
+                    printHistory(history);
+                    printOutput(" ");
+                }
+            } 
+        }
+    });
+}
+ 
+
+
+// get number
+var number = document.getElementsByClassName("number");
+
+// click event for all numbers
+for (var i=0; i < number.length; i++) {
+    number[i].addEventListener('click', 
+        function () {
+            var output = reverseNumberFormat(getOutput());
+            if (output != NaN) { // if output is a number
+                output =  output+this.id; //concatenate the number
+                printOutput(output);
+            }
+        }
+    );
+}
+
+
+/////////////////////
 // setup gobal variables
-var total = 0;
+
 
 // get the numbers and create an array 
-function getNumber() {
-    for (var i=0, i < )
-    
-}
+
 // cannot have multiple decimal points
 
 
@@ -26,21 +113,6 @@ function getNumber() {
 // use answer from previous equation for new equation 
 
 
-
 //display the result when "=" is clicked 
 
 // --- handlers for displaying numbers when clicked 
-var handlers = {
-    clickButton: function() {
-        document.getElementById("steps").innerHTML = getNumber()
-    },
-
-    clearCalc: function() {
-        document.getElementById("steps").innerHTML = "clear"
-    },
-
-    showTotal: function() {
-        document.getElementById("steps").innerHTML = "="
-    },
-}
-

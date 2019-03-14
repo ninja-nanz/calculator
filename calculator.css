@@ -41,7 +41,7 @@ p {
     
 }
 
-#calcDisplay {
+#result {
     background-color: #ffffff;
     width: 300px;
     height: 55px;
@@ -64,7 +64,7 @@ span{
     padding: 30px;
 }
 
-#calculator {
+#keyboard {
     background-color: #c8bae5;
     width: 300px;
     height: 377px;
@@ -92,31 +92,31 @@ button:focus {
   }
 
 
-.orange {
+.number {
     background-color: #987bd3;
     color: rgba(255, 255, 255, 0.845);
     margin: 0px 1px 8px 0px;
 }
 
-.orange:hover {
+.number:hover {
     background-color: #7c5eb8;
 }
 
-.orange:active {
+.number:active {
     background-color: #60419e;
 }
 
 
-.math {
+.operator {
     background-color: #6646a7;
     color: white;
 }
 
-.math:hover {
+.operator:hover {
     background-color:#4d3480;
 }
 
-.math:active {
+.operator:active {
     background-color:coral;
 }
 
