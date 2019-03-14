@@ -17,18 +17,12 @@ html, body {
 
 h1 {
     font-family: 'Palanquin Dark', sans-serif;
-    font-size: 32pt;
+    font-size: 22pt;
     color: #987bd3;
     text-align: center;
 }
 
-p {
-    font-family: 'Quattrocento Sans', sans-serif;
-    font-size: 18pt;
-    color: rgb(78, 78, 78);
-    line-height: 24pt;
-    text-align: center;
-}
+
 
 
 #logo-1 {
@@ -156,10 +150,18 @@ button:focus {
 
 #history-value {
     font-family: 'Palanquin Dark', sans-serif;
-    font-size: 80pt;
+    font-size: 60pt;
     color: #ccb6f7bf;
     text-align: left;
     position: absolute; bottom: 300px; left: 50px;
 }
 
 
+.small-text {
+    font-size: 12px;
+    color: #7c5eb8;
+}
+ 
+a {
+    color: #7c5eb8;
+}
