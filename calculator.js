@@ -87,7 +87,7 @@ for (var i=0; i < number.length; i++) {
 }
 
 
-/////////////////////
+///////////////////// OLD PSEUDOCODE ////
 // setup gobal variables
 
 
